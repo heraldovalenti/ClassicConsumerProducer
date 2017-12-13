@@ -20,5 +20,17 @@ namespace Tests
             lifoQueue.Push("one-element");
             Assert.False(lifoQueue.IsEmpty());
         }
+
+        [Fact]
+        public void EnsureLifoOrder()
+        {
+            string first = "first";
+            string second = "second";
+            LifoQueue<string> lifoQueue = new LifoQueue<string>();
+            lifoQueue.Push(first);
+            lifoQueue.Push(second);
+            Assert.Equal(second, lifoQueue.Pop());
+            Assert.Equal(first, lifoQueue.Pop());
+        }
     }
 }
