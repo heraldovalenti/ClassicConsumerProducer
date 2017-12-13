@@ -1,23 +1,24 @@
-﻿//using Xunit;
+﻿using ClassicConsumerProducer;
+using Xunit;
 
-namespace ClassicConsumerProducer.Test
+namespace Tests
 {
     public class LifoQueueTests
     {
 
-        //[Fact]
+        [Fact]
         public void TestEmptyLifo()
         {
             LifoQueue<string> lifoQueue = new LifoQueue<string>();
-            //Assert.True(lifoQueue.IsEmpty());
+            Assert.True(lifoQueue.IsEmpty());
         }
 
-        //[Fact]
+        [Fact]
         public void TestLoadedLifo()
         {
             LifoQueue<string> lifoQueue = new LifoQueue<string>();
             lifoQueue.Push("one-element");
-            //Assert.False(lifoQueue.IsEmpty());
+            Assert.False(lifoQueue.IsEmpty());
         }
     }
 }
