@@ -38,7 +38,7 @@ namespace ClassicConsumerProducer
         {
             lock (sync)
             {
-                queue.AddLast(toBePushed);
+                queue.AddFirst(toBePushed);
             }
         }
     }
