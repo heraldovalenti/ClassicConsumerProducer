@@ -17,8 +17,8 @@ namespace Tests
         public void TestLoadedLifo()
         {
             LifoQueue<string> lifoQueue = new LifoQueue<string>();
-            lifoQueue.Push("one-element");
-            Assert.False(lifoQueue.IsEmpty());
+            lifoQueue.Push("element");
+            Assert.True(lifoQueue.IsEmpty());
         }
 
         [Fact]
