@@ -12,6 +12,14 @@ namespace ClassicConsumerProducer
             this.queue = new LinkedList<T>();
         }
 
+        public void Clear()
+        {
+            lock (sync)
+            {
+                queue.Clear();
+            }
+        }
+
         public bool IsEmpty()
         {
             lock (sync)

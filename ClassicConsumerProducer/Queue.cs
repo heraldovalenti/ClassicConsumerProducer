@@ -9,5 +9,6 @@ namespace ClassicConsumerProducer
 
         bool IsEmpty();
 
+        void Clear();
     }
 }
