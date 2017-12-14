@@ -1,4 +1,4 @@
-﻿using ClassicConsumerProducer;
+using ClassicConsumerProducer;
 using Xunit;
 
 namespace Tests
@@ -10,8 +10,7 @@ namespace Tests
         public void TestClearQueue()
         {
             LifoQueue<string> lifoQueue = new LifoQueue<string>();
-            lifoQueue.Push("One-Elemement");
-            Assert.False(lifoQueue.IsEmpty());
+			lifoQueue.Push("One-Elemement");
             lifoQueue.Clear();
             Assert.True(lifoQueue.IsEmpty());
         }
