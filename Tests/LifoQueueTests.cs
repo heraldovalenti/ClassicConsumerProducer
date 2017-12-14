@@ -27,7 +27,7 @@ namespace Tests
         {
             LifoQueue<string> lifoQueue = new LifoQueue<string>();
             lifoQueue.Push("element");
-            Assert.True(lifoQueue.IsEmpty());
+            Assert.False(lifoQueue.IsEmpty());
         }
 
         [Fact]
