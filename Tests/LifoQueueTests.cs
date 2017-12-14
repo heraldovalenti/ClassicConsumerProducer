@@ -7,6 +7,12 @@ namespace Tests
     {
 
         [Fact]
+        public void TestClearQueue()
+        {
+            
+        }
+
+        [Fact]
         public void TestEmptyLifo()
         {
             LifoQueue<string> lifoQueue = new LifoQueue<string>();
