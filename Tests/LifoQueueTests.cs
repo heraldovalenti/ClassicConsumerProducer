@@ -9,7 +9,11 @@ namespace Tests
         [Fact]
         public void TestClearQueue()
         {
-            
+            LifoQueue<string> lifoQueue = new LifoQueue<string>();
+            lifoQueue.Push("One-Elemement");
+            Assert.False(lifoQueue.IsEmpty());
+            lifoQueue.Clear();
+            Assert.True(lifoQueue.IsEmpty());
         }
 
         [Fact]
