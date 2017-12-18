@@ -10,7 +10,8 @@ namespace Tests
         public void TestClearQueue()
         {
             FifoQueue<string> fifoQueue = new FifoQueue<string>();
-            Assert.True(fifoQueue.IsEmpty());
+            fifoQueue.Push("one-element");
+            Assert.False(fifoQueue.IsEmpty());
         }
 
         [Fact]
